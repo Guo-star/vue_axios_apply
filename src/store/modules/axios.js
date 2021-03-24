@@ -44,13 +44,6 @@ export default {
         promiseCancel.delete(url);
       }
     },
-    // 取消添加的请求
-    CLEAR_AXIOS(state) {
-      state.axiosPromiseCancel.forEach((e) => {
-        e && e();
-      });
-      state.axiosPromiseCancel.clear();
-    },
   },
   actions: {},
 };
